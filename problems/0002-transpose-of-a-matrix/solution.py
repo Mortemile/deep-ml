@@ -17,6 +17,6 @@ def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
     for j in range(rows):
         new_row = []
         for i in range(cols):
-            new_row.append(a[i].pop(0))
+            new_row.append(a[i][j])
         transposed.append(new_row)
     return transposed
