@@ -9,5 +9,5 @@ def reshape_matrix(a: list[list[int|float]], new_shape: tuple[int, int]) -> list
 		return []
 
 	flat = [x for row in a for x in row]
-	reshaped_matrix = [flat[i:i+cols] for i in range(0, len(flat), cols)]
+	reshaped_matrix = [flat[i:i+new_cols] for i in range(0, len(flat), new_cols)]
 	return reshaped_matrix
